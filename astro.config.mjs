@@ -10,4 +10,5 @@ export default defineConfig({
   integrations: [react(), clerk()],
   adapter: node({ mode: "standalone" }),
   output: "server",
+  site: "https://peebleswargaming.org",
 });
