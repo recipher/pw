@@ -6,9 +6,6 @@
 app = 'peebles-wargaming'
 primary_region = 'lhr'
 
-[env]
-  PUBLIC_CLERK_PUBLISHABLE_KEY = "pk_test_c29saWQtYXNwLTk4LmNsZXJrLmFjY291bnRzLmRldiQ"
-
 [http_service]
   internal_port = 8080
   force_https = true
