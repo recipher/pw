@@ -7,7 +7,7 @@ import clerk from "@clerk/astro";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), clerk()],
+  integrations: [react()],
   adapter: node({ mode: "standalone" }),
   output: "server",
   site: "https://peebleswargaming.org",
