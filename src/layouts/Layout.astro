@@ -1,0 +1,27 @@
+---
+import {
+    SignedIn,
+    SignedOut,
+    UserButton,
+    SignInButton,
+} from "@clerk/astro/components";
+import "../styles/global.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <header class="bg-gray-100 p-4">PW</header>
+        <main class="grow p-4"><slot /></main>
+        <footer class="bg-gray-100 p-4">&copy; Peebles Wargaming 2026</footer>
+    </body>
+</html>
+
+<style is:global>
+    /* Global styles that can't be handled by Tailwind */
+</style>

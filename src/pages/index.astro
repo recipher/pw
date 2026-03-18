@@ -1,15 +1,40 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/layout.astro";
 import { SignedIn, SignedOut } from "@clerk/astro/components";
 ---
 
-<Layout title="Clerk + Astro">
-    <SignedOut>
+<Layout title="Peebles Wargaming | Home">
+    <!-- <SignedOut>
         <p>Sign in to try Clerk out!</p>
     </SignedOut>
     <SignedIn>
         <p>You are signed in!</p>
-    </SignedIn>
+    </SignedIn> -->
 
-    ### Peebles Wargaming
+    <div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+            <h2
+                class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
+            >
+                The Peebles Wargaming Council
+            </h2>
+            <p class="mt-8 text-lg text-pretty text-gray-500 sm:text-xl/8">
+                A local wargames and role-playing collective, for the people of
+                Peebles, Tweeddale and beyond.
+            </p>
+            <p class="mt-8 text-md text-pretty text-gray-500 sm:text-lg/8">
+                Everyone is welcome, experienced gamers and beginners alike. Are
+                you wargaming curious? Are you looking for more people to play
+                with?
+            </p>
+            <p class="mt-8 text-md text-pretty text-gray-500 sm:text-lg/8">
+                We meet every <b>Friday from 6:30pm</b> at the <a
+                    href="https://peeblesscouts.org.uk/">Peebles Scout Hall</a
+                > on <a
+                    href="https://maps.app.goo.gl/WqGJ5CCdzAR6GowQ6"
+                    target="_blank">Dean Park</a
+                >.
+            </p>
+        </div>
+    </div>
 </Layout>
