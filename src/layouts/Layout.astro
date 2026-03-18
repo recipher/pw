@@ -1,11 +1,6 @@
 ---
-import {
-    SignedIn,
-    SignedOut,
-    UserButton,
-    SignInButton,
-} from "@clerk/astro/components";
 import "../styles/global.css";
+import Navigation from "../components/navigation.tsx";
 ---
 
 <html lang="en">
@@ -16,7 +11,7 @@ import "../styles/global.css";
         <meta name="generator" content={Astro.generator} />
     </head>
     <body class="flex flex-col min-h-screen">
-        <header class="bg-gray-100 p-4">PW</header>
+        <Navigation />
         <main class="grow p-4"><slot /></main>
         <footer class="bg-gray-100 p-4">&copy; Peebles Wargaming 2026</footer>
     </body>
