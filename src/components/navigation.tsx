@@ -42,14 +42,14 @@ export default function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm/6 font-semibold text-gray-900 pt-1.5"
+                className="text-md/6 font-normal text-gray-900 pt-1.5"
               >
                 {item.name}
               </a>
             ))}
             <a
               href="/join"
-              className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-indigo-600 px-3 py-2 text-md font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Join
             </a>
@@ -115,7 +115,7 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-thin text-gray-900 hover:bg-gray-50"
                 >
                   {item.name}
                 </a>
