@@ -11,7 +11,7 @@ import Navigation from "../components/navigation.tsx";
         <meta name="generator" content={Astro.generator} />
     </head>
     <body class="flex flex-col min-h-screen">
-        <Navigation />
+        <Navigation client:load />
         <main class="grow p-4"><slot /></main>
         <footer class="bg-gray-100 p-4">&copy; Peebles Wargaming 2026</footer>
     </body>
