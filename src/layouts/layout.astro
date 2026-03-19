@@ -1,4 +1,5 @@
 ---
+import { Font } from "astro:assets";
 import "../styles/global.css";
 import Navigation from "../components/navigation.tsx";
 ---
@@ -9,6 +10,7 @@ import Navigation from "../components/navigation.tsx";
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
+        <Font cssVariable="--font-gemini" />
     </head>
     <body class="flex flex-col min-h-screen">
         <Navigation client:load />

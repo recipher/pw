@@ -1,6 +1,6 @@
 // @ts-check
 import react from "@astrojs/react";
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import node from "@astrojs/node";
 import clerk from "@clerk/astro";
 import tailwindcss from "@tailwindcss/vite";
@@ -14,4 +14,20 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  fonts: [
+    {
+      provider: fontProviders.local(),
+      name: "Gemini",
+      cssVariable: "--font-gemini",
+      options: {
+        variants: [
+          {
+            src: ["./src/assets/fonts/TG-Gemini.otf"],
+            weight: "normal",
+            style: "normal",
+          },
+        ],
+      },
+    },
+  ],
 });
