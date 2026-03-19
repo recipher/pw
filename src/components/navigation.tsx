@@ -7,12 +7,7 @@ import {
   XMarkIcon,
   ShieldCheckIcon,
 } from "@heroicons/react/24/outline";
-import {
-  SignedIn,
-  SignedOut,
-  UserButton,
-  SignInButton,
-} from "@clerk/astro/components";
+import { UserButton, SignInButton } from "@clerk/astro/components";
 
 const navigation = [
   { name: "Wargaming", href: "/games/wargames" },
@@ -116,7 +111,7 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-thin text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-normal text-gray-900 hover:bg-gray-50"
                 >
                   {item.name}
                 </a>
