@@ -10,7 +10,7 @@ import Navigation from "../components/navigation.tsx";
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
-        <Font cssVariable="--font-gemini" />
+        <Font cssVariable="--font-gemini" preload />
     </head>
     <body class="flex flex-col min-h-screen">
         <Navigation client:load />

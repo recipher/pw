@@ -18,6 +18,7 @@ const navigation = [
   { name: "Wargaming", href: "/games/wargames" },
   { name: "Role Playing", href: "/games/rpg" },
   { name: "Members", href: "/members" },
+  { name: "Events", href: "/events" },
   { name: "Play", href: "/play" },
   { name: "Discord", icon: "discord", href: "https://discord.gg/7kq4JxcYy" },
   {
