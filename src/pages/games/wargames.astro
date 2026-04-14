@@ -1,15 +1,33 @@
 ---
 import Layout from "../../layouts/layout.astro";
+import Games from "../../components/games";
+const games = [
+    { name: "Warhammer 40K", image: "wh40k.png" },
+    { name: "Warhammer Age of Sigmar", image: "whaos.png" },
+    { name: "Warhammer The Old World", image: "whtow.png" },
+    { name: "Necromunda", image: "necromunda.png" },
+    //{ name: "Star Wars Legion", image: "swl.webp" },
+    { name: "Star Wars Shatterpoint", image: "swsp.webp" },
+    { name: "Marvel Crisis Protocol", image: "mcp.gif" },
+    { name: "Infinity", image: "infinity.png" },
+    { name: "Warcrow", image: "warcrow.webp" },
+    { name: "Relicblade", image: "relicblade.gif" },
+    { name: "Bolt Action", image: "boltaction.png" },
+];
+const text =
+    "We play a wide variety of wargames and we are always happy to learn and play something new.";
 ---
 
-<Layout title="Peebles Wargaming | Play">
+<Layout title="Peebles Wargaming | Wargames">
     <div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
             <h3
                 class="text-5xl font-semibold font-serif tracking-tight text-gray-900 sm:text-6xl"
             >
-                Wargames
+                Wargaming
             </h3>
+
+            <Games games={games} text={text} />
         </div>
     </div>
 </Layout>
