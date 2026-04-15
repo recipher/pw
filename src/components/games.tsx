@@ -1,6 +1,7 @@
 export type Game = {
   image: string;
   name: string;
+  url: string;
 };
 
 export default function Games({
@@ -21,12 +22,14 @@ export default function Games({
       >
         {games.map((game: Game) => (
           <li key={game.name}>
-            <img
-              alt={game.name}
-              src={`/assets/${game.image}`}
-              height={100}
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            />
+            <a href={game.url} target="_blank">
+              <img
+                alt={game.name}
+                src={`/assets/${game.image}`}
+                height={100}
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              />
+            </a>
           </li>
         ))}
       </ul>

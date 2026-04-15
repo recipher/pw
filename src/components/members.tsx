@@ -1,6 +1,9 @@
+import { UserCircleIcon } from "@heroicons/react/24/outline";
+
 export type Member = {
   name: string;
   role: string;
+  games: string;
   image: string;
 };
 
@@ -18,15 +21,21 @@ export default function Members({ members }: { members: Member[] }) {
       >
         {members.map((person) => (
           <li key={person.name}>
-            <img
+            {/*<img
               alt=""
               src={person.image}
               className="mx-auto size-24 rounded-full outline-1 -outline-offset-1 outline-black/5"
-            />
+            />*/}
+            <UserCircleIcon className="mx-auto size-24 text-indigo-600" />
             <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">
               {person.name}
             </h3>
-            <p className="text-sm/6 text-gray-600">{person.role}</p>
+            {/*<p className="text-sm/6 text-gray-600">{person.role}</p>*/}
+            {person.games.map((game: any) => (
+              <p key="game" className="text-sm/6 text-gray-600">
+                {game}
+              </p>
+            ))}
           </li>
         ))}
       </ul>
