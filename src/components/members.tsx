@@ -22,7 +22,7 @@ export default function Members({ members }: { members: Member[] }) {
         {members.map((person) => (
           <li key={person.name}>
             {/*<img
-              alt=""
+              alt={person.name}
               src={person.image}
               className="mx-auto size-24 rounded-full outline-1 -outline-offset-1 outline-black/5"
             />*/}
