@@ -99,7 +99,12 @@ export default function Navigation() {
           <div className="flex items-center gap-x-6">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Peebles Wargaming</span>
-              <ShieldCheckIcon className="h-8 w-auto" />
+              <img
+                alt="Peebles Wargaming"
+                src="/favicon.png"
+                className="mx-auto size-8"
+              />
+              {/*<ShieldCheckIcon className="h-8 w-auto" />*/}
             </a>
             <a
               href="/join"
